@@ -1,0 +1,47 @@
+[
+  {
+    "ContainingType": "SteamFriendsApiController",
+    "Method": "GetFriendsList",
+    "RelativePath": "api/SteamFriendsApi/GetFriendsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "steamKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "steamId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Interview_API.Models.SteamFriendsApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  }
+]
